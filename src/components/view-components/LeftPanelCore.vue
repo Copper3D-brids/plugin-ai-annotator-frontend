@@ -3,7 +3,7 @@
       <div v-show="showDebugPanel" ref="debugContainer" class="left_gui"></div>
       <div ref="canvasContainer" class="canvas_container"></div>
       <div v-show="showSliceIndex" ref="sliceIndexContainer" class="copper3d_sliceNumber">
-          Tumour Segmentation Panel
+          Medical Image Slice Index
       </div>
 
       <div v-show="enableUpload">
