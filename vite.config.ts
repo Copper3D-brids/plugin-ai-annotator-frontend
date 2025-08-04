@@ -29,7 +29,7 @@ export default defineConfig({
       entry: './src/index.ts',
       name: 'SegmentationApp',
       formats: ['umd'],
-      fileName: (format)=>`segmentation_app.${format}.js`
+      fileName: (format)=>`my-app.${format}.js`
     },
     rollupOptions: {
       external: ['vue', 'vuetify', 'pinia'], 
