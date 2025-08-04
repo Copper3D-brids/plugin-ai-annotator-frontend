@@ -185,7 +185,7 @@ function setUpMouseWheel(e:KeyboardEvent, status: "down" | "up") {
 async function getInitData() {
   if(!!studyDetails.value === false) await getTumourStudyDetails();
   if (studyDetails.value?.details) {
-    incompleteCases.value = studyDetails.value?.details.filter((item) => item.name === "Breast_MRI_014")
+    incompleteCases.value = studyDetails.value?.details.filter((item) => item.name === "Breast_MRI_014" || item.name === "rat_MRI");
 
     // get first incomplete case nrrd image
     if (incompleteCases.value.length > 0) {
@@ -237,6 +237,7 @@ const getCalculateSpherePositionsData = async (res:IToolCalculateSpherePositions
         z: tumourSphereOrigin.z[2]
       }
       workingCase.value!.tumour_window.center = toumourCenterMM;
+      console.log("getCalculateSpherePositionsData", workingCase.value!.tumour_window.center);
       if(nnMaskJsonBlob.value){
         //@ts-ignore
         URL.revokeObjectURL(nnMaskJsonBlob.value);

@@ -32,7 +32,7 @@
         class="px-5"
         width="250px"
         max-width="250px"
-        src="abi.png"
+        src="/abi.png"
       ></v-img>
     </div>
   </v-app-bar>
