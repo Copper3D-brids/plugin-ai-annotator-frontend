@@ -1,4 +1,4 @@
-# Tumour app vuetify
+# Plugin AI Annotator 
 
 ## Project setup
 
